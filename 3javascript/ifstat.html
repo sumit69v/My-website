@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+
+<title>javascript learning</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+</head>
+<body>
+
+<p>How many i guess between 1 and 5?</p>
+<input id="answer" />
+<button id="mybutton">submit</button>
+
+<script type="text/javascript">
+document.getElementById('mybutton').onclick=function () {
+
+var x=Math.random();
+	x=5*x;
+	x=Math.floor(x);
+
+if (x==document.getElementById('answer').value){
+	alert("correct.");
+	
+} else {
+	alert("wrong. My value is "+x);
+}
+
+
+
+
+}
+
+
+
+</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html>
+<head>
+
+<title>javascript learning</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+</head>
+
+<body>
+	<button id="textChanger">Change first text div</button>
+	<div id="firstDiv">This is some text.</div>
+
+	<button id="textAppender">Append some text</button>
+	<div id="secondDiv">Javascript is ...</div>
+
+	<button id="textCreator">text creator</button>
+	<div id="emptyDiv"></div>
+
+	<button id="changeColor">change color</button>
+	<div id="colorDiv"></div>
+
+
+
+<script type="text/javascript">
+/*
+	this is a multi line comment
+
+
+	*/
+	// this is a comment
+document.getElementById("textChanger").onclick=function() {
+	document.getElementById("firstDiv").innerHTML="This is awesome!";
+}
+
+document.getElementById("textAppender").onclick=function() {
+	document.getElementById("secondDiv").innerHTML=document.getElementById("secondDiv").innerHTML + "great!";
+}
+
+document.getElementById("textCreator").onclick=function() {
+	document.getElementById("emptyDiv").innerHTML="<ul><li>Cat</li><li>Dog</li></ul>";
+}
+
+document.getElementById("changeColor").onclick=function() {
+	document.getElementById("colorDiv").colour= red;
+}
+
+
+
+
+</script>
+
+</body>
+
+
+</html>

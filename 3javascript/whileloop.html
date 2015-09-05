@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+
+<title>javascript while loop</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+</head>
+<body>
+	<p>How many fingers are you holding up?</p>
+	<input id="myNumber" />
+	<button id="guess">Guess</button>
+
+<script type="text/javascript">
+
+document.getElementById("guess").onclick=function(){
+	
+var gotit=false;
+var guesses==1; 
+var x;
+
+while (gotit==false){
+	var x=Math.random();
+		x=6*x;
+		x=Math.floor(x);
+
+	if (document.getElementById("guess").value==x){
+		gotit==true;
+	} else {
+		guesses++;
+	}
+}
+alert("got it. it was a "+x". it only took me"+guesses+" guesses!")
+}
+
+
+</script>
+
+
+
+
+</body>
+
+
+</head>

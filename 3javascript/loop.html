@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+
+<title>javascript loop learning</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+</head>
+<body>
+
+<p>How many finger i am holding up?</p>
+<input id="answer"/>
+<button id="mybutton">submit</button>
+
+
+<p id="arrayString"></p>
+
+
+<script type="text/javascript">
+
+/* var myArray=["pizza","chocolate","chrips"];
+for (var i=0; i<myArray.length; i++) {
+	alert(myArray[i]);
+}
+*/
+
+var arrayString="";
+var myArray=["pizza","chocolate","chrisp"];
+for (var i=0; i<myArray.length; i++) {
+	arrayString=arrayString+myArray[i]+" ";
+}
+
+
+document.getElementById('arrayString').innerHTML=arrayString;
+
+
+
+
+
+</script>
+</html>
